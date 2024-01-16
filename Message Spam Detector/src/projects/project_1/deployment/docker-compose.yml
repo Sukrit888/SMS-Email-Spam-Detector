@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  # Streamlit Application
+  sukrit_project_1_streamlit:
+    container_name: sukrit_project_1_streamlit
+    build: .
+    ports:
+      - 6008:8501
+    restart: on-failure
